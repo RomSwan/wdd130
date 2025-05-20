@@ -1,0 +1,89 @@
+:root {
+    --primary-colour: #2e5266; /*Charcoal*/
+    --secondary-colour: #70c1b3; /*Verdigris*/
+    --accent1-colour: #ffb100; /*Selective Yellow*/
+    --accent2-colour: #104911; /*Pakistan Green*/
+    /*Palette link: https://coolors.co/2e5266-70c1b3-df928e-ffb100-104911*/
+    --heading-font: 'Bebas Neue', sans-serif;
+    --text-font: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--text-font);
+    color: var(--accent1-colour);
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--primary-colour);
+    color: var(--accent2-colour);
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+article {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px grey;
+    top: 130px;
+    right: 45px;
+}
+
+article p {
+    font-size: 12px;
+    margin: auto;
+    height: 83.5px;
+    padding: 2px;
+    background-color: var(--secondary-colour);
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-colour);
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: .7;
+    background-color: var(--accent1-colour);
+    color:  solid white;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
