@@ -87,3 +87,10 @@ h1 {
 .socialmedia a {
     text-decoration: none;
 }
+
+.socialmedia img {
+    width: 30px;
+    height: auto;
+    padding: 0;
+    margin: auto;
+}
