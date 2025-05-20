@@ -25,8 +25,18 @@ header, main, footer {
 }
 
 header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
     background-color: var(--primary-colour);
     color: var(--accent2-colour);
+}
+
+header img {
+    max-width: 75px;
+    height: auto;
+    align-content: center;
 }
 
 nav, p, section, article {
