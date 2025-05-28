@@ -104,3 +104,37 @@ h1 {
     padding: 0;
     margin: auto;
 }
+
+#adventure {
+    background-color: var(--accent1-colour);
+    margin-bottom: 10px;
+}
+
+section h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+figure {
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 220px;
+  margin: auto;
+  color: var(--primary-colour);
+  font-size: 10px;
+  text-align: center;
+}
+
+.img-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-container img {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 8px;
+}
