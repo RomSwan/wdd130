@@ -25,10 +25,10 @@ header, main, footer {
 }
 
 header {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
-    height: 100px;
+    padding: 10px;
     background-color: var(--primary-colour);
     color: var(--accent2-colour);
 }
@@ -37,6 +37,11 @@ header img {
     max-width: 75px;
     height: auto;
     align-content: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
 }
 
 nav, p, section, article {
@@ -103,6 +108,17 @@ h1 {
     height: auto;
     padding: 0;
     margin: auto;
+}
+
+#history {
+    background-color: var(--secondary-colour);
+}
+
+.history-container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    background-color: var(--accent2-colour);
+    font-size: 14px;
 }
 
 #adventure {
