@@ -53,9 +53,12 @@ header nav a {
     background: white;
     color: var(--primary-colour);
     font-weight: bold;
-    text-decoration: none;
     padding: 10px 15px;
     border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
 }
 
 nav, p, section, article {
@@ -68,7 +71,7 @@ h1, h2 {
     color: var(--primary-colour);
 }
 
-h1 {
+#aboutH1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -198,4 +201,195 @@ footer {
 
 .socialmedia img {
     width: 30px;
+}
+
+/*CONTACT US PAGE*/
+
+/*Hero*/
+
+#contactHero {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    background-color: var(--accent1-colour);
+    color: var(--accent2-colour);
+    margin: 0;
+    padding-bottom: 80px;
+    margin-bottom: 115px;
+}
+
+#reach h1 {
+    font-size: 3rem;
+}
+
+#reach p {
+    padding: 0;
+}
+
+/*Customer Support*/
+
+#customerSupport {
+    position: absolute;
+    background-color: var(--accent3-colour);
+    width: 400px;
+    height: 175px;
+    margin-top: 150px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px grey;
+}
+
+#customerSupport h2 {
+    color: var(--accent2-colour);
+}
+#customerSupport p {
+    color: white;
+    text-align: left;
+    margin-left: 60px;
+}
+
+/*Location*/
+
+#location {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: thin var(--primary-colour) solid;
+    position: relative;
+    height: 290px;
+    margin: 0 auto;
+}
+
+#mapLegend {
+    margin: 0 auto;
+}
+
+#mapLegend h2 {
+    padding: 10px;
+}
+
+#map iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/*Meet the Staff*/
+
+#meetStaff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent3-colour);
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#meetStaff h2 {
+    color: var(--accent2-colour);
+}
+
+#meetStaff img {
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    margin: auto;
+    color: var(--primary-colour);
+    font-size: 10px;
+    text-align: center;
+
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#meetStaff figcaption {
+    color: var(--accent2-colour);
+}
+
+.staffName {
+    font-size: .8rem;
+}
+
+/*Form*/
+
+#message p {
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+}
+
+form {
+    width: auto;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid var(--primary-colour);
+    border-radius: .5rem;
+    background-color: #eee;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+legend {
+    padding: .5rem;
+    color: var(--primary-colour);
+    font-size: 1em;
+}
+
+label, input, button, select, textarea {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+button {
+    margin: 1rem;
+    background-color: var(--primary-colour);
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1rem;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  vertical-align: bottom;
+}
+
+button:hover {
+    background-color: var(--accent3-colour);
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    width: 100%;
+    margin: .5rem 0;
+    grid-column: 1 / -1;
+}
+
+.column2 {
+    grid-template-columns: 30% 70%;
 }
