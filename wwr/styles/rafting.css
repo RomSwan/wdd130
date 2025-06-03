@@ -1,9 +1,10 @@
 :root {
-    --primary-colour: #2e5266; /*Charcoal*/
-    --secondary-colour: #70c1b3; /*Verdigris*/
-    --accent1-colour: #ffb100; /*Selective Yellow*/
-    --accent2-colour: #104911; /*Pakistan Green*/
-    /*Palette link: https://coolors.co/2e5266-70c1b3-df928e-ffb100-104911*/
+    --primary-colour: #0079A2; /*Blue*/
+    --secondary-colour: #71D7E5; /*Light Blue*/
+    --accent1-colour: #D8A93F; /*Wet Sand*/
+    --accent2-colour: #F6E5CB; /*Caucasian*/
+    --accent3-colour: #4B6E50; /*Seaweed Green*/
+    /*Palette link: https://coolors.co/0079a2-71d7e5-d8a93f-f6e5cb-4b6e50*/
     --heading-font: 'Bebas Neue', sans-serif;
     --text-font: 'Roboto', sans-serif;
 }
@@ -112,6 +113,7 @@ article p {
     font-size: 14px;
     padding: 20px;
     background-color: var(--secondary-colour);
+    color: whitesmoke;
 }
 
 .hero article img {
@@ -136,6 +138,7 @@ article p {
     grid-template-columns: auto 1fr auto;
     background-color: var(--accent2-colour);
     font-size: 14px;
+    color: var(--accent3-colour);
 }
 
 #history figure {
