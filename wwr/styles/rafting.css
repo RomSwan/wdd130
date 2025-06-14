@@ -90,9 +90,23 @@ h1, h2 {
 .hero {
     position: relative;
     display: flex;
-    padding: 20px 0;
+    padding: 0 auto;
     text-align: center;
     justify-content: center;
+}
+
+.floatingLogo {
+    position: absolute;
+    max-width: 250px;
+}
+
+.floatingText {
+    position: absolute;
+    bottom: 30px;
+    font-size: 3rem;
+    background-color: #eee;
+    padding: 8px;
+    border-radius: 10px;
 }
 
 article {
@@ -377,9 +391,9 @@ button {
 }
 
 input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
-  vertical-align: bottom;
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
 }
 
 button:hover {
@@ -399,4 +413,91 @@ button:hover {
 
 .column2 {
     grid-template-columns: 30% 70%;
+}
+
+/*HOME PAGE*/
+
+.container {
+    background-color: var(--secondary-colour);
+    padding: 1rem;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#free {
+    padding-top: 1rem;
+}
+
+#offers {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+#offers ul {
+    flex: 1;
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin: 0;
+}
+
+#offerImg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+#offerImg img {
+    width: 100%;
+    max-width: 272px;
+    height: 200px;
+    object-fit: cover;  
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#checkTrips {
+    text-align: center;
+    padding: 1rem .25rem;
+    margin-top: 2rem;
+}
+
+#checkTrips h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#tripButton button {
+    background-color: var(--accent1-colour);
+    color: var(--primary-colour);
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+}
+
+#tripButton button:hover {
+    background-color: var(--accent2-colour);
+}
+
+#letter {
+    background-color: var(--accent3-colour);
+    margin: 0;
+}
+
+#letter h2 {
+    color: var(--accent2-colour);
+}
+
+#letter p {
+    text-align: center;
+}
+
+.homeLetter {
+    display: block;
+    text-align: left;
+    padding-top: 10px;
 }
